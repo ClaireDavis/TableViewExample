@@ -1,0 +1,17 @@
+//
+//  APIConstants.m
+//  TableViewExample
+//
+//  Created by Claire Davis on 12/22/15.
+//  Copyright © 2015 Davis. All rights reserved.
+//
+
+#import "APIConstants.h"
+
+//////Horizons Parse APP
+NSString *const PARSE_APPLICATION_KEY = @"YOUR_KEY";
+NSString *const PARSE_CLIENT_KEY = @"YOUR_CLIENT_KEY";
+
+//Amazon S3 pool id
+NSString *const POOL_ID = @"YOUR_POOL_ID";
+NSString *const IMAGE_FILE_PATH = @"YOUR_FILE_PATH";
