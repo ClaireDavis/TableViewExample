@@ -4,7 +4,7 @@ example table view configuration using Parse and AWS S3 databases
 ## Installation
 To install this project, go ahead and clone it to your desired location  
 ```
-git@github.com:ClaireDavis/TableViewExample.git
+git clone git@github.com:ClaireDavis/TableViewExample.git
 ```  
 Next you'll need to install the pods, get the latest stable version of cocoapods and then run
 ```
