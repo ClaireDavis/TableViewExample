@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D60CE991D9CB13D7035ADBBB889D2FF050B13194",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CD31FE951AEDD86AD708E29CF4D3DCD996CC084F" : 0,
+    "D60CE991D9CB13D7035ADBBB889D2FF050B13194" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EE0237F3-1C84-4E36-B40F-FB11B3F031A8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CD31FE951AEDD86AD708E29CF4D3DCD996CC084F" : "..",
+    "D60CE991D9CB13D7035ADBBB889D2FF050B13194" : "TableViewExample\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TableViewExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TableViewExample.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ClaireDavis\/ios-your-first-NSLog-000.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CD31FE951AEDD86AD708E29CF4D3DCD996CC084F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ClaireDavis\/TableViewExample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D60CE991D9CB13D7035ADBBB889D2FF050B13194"
+    }
+  ]
+}

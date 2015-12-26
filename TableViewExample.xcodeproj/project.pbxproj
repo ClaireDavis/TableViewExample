@@ -47,11 +47,11 @@
 		4774851753762B7BED3C538A /* Pods-TableViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewExample/Pods-TableViewExample.debug.xcconfig"; sourceTree = "<group>"; };
 		4A3B5E4089E2486307049AD3 /* libPods-TableViewExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TableViewExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		618DB9F05D0D5835BBD727DE /* Pods-TableViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewExample/Pods-TableViewExample.release.xcconfig"; sourceTree = "<group>"; };
-		E2D154081C2E41D1003A0428 /* APIConstants.m.example */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = APIConstants.m.example; sourceTree = "<group>"; };
+		E2D154081C2E41D1003A0428 /* APIConstants.m.example */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = APIConstants.m.example; path = HelperFiles/APIConstants.m.example; sourceTree = "<group>"; };
 		E2EE2B3E1C2A2CDF004523D8 /* TableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EE2B421C2A2CDF004523D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E2EE2B441C2A2CDF004523D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E2EE2B451C2A2CDF004523D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E2EE2B441C2A2CDF004523D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = HelperFiles/AppDelegate.h; sourceTree = "<group>"; };
+		E2EE2B451C2A2CDF004523D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = HelperFiles/AppDelegate.m; sourceTree = "<group>"; };
 		E2EE2B4B1C2A2CDF004523D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2EE2B4D1C2A2CDF004523D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2EE2B501C2A2CE0004523D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,18 +66,18 @@
 		E2EE2B751C2A2D95004523D8 /* PictureTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureTableViewController.m; sourceTree = "<group>"; };
 		E2EE2B771C2A3039004523D8 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		E2EE2B781C2A3039004523D8 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
-		E2EE2B7A1C2A33D9004523D8 /* APIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConstants.h; sourceTree = "<group>"; };
-		E2EE2B7B1C2A33D9004523D8 /* APIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConstants.m; sourceTree = "<group>"; };
-		E2EE2B7D1C2A4154004523D8 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
-		E2EE2B7E1C2A4154004523D8 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
-		E2EE2B801C2A4237004523D8 /* ParseAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseAPIClient.h; sourceTree = "<group>"; };
-		E2EE2B811C2A4237004523D8 /* ParseAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseAPIClient.m; sourceTree = "<group>"; };
-		E2EE2B831C2A4459004523D8 /* ImageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageObject.h; sourceTree = "<group>"; };
-		E2EE2B841C2A4459004523D8 /* ImageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageObject.m; sourceTree = "<group>"; };
-		E2EE2B851C2A4459004523D8 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
-		E2EE2B861C2A4459004523D8 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
-		E2EE2B891C2AEFE0004523D8 /* AWSDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWSDownloadManager.h; sourceTree = "<group>"; };
-		E2EE2B8A1C2AEFE0004523D8 /* AWSDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWSDownloadManager.m; sourceTree = "<group>"; };
+		E2EE2B7A1C2A33D9004523D8 /* APIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIConstants.h; path = HelperFiles/APIConstants.h; sourceTree = "<group>"; };
+		E2EE2B7B1C2A33D9004523D8 /* APIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIConstants.m; path = HelperFiles/APIConstants.m; sourceTree = "<group>"; };
+		E2EE2B7D1C2A4154004523D8 /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataStore.h; path = HelperFiles/DataStore.h; sourceTree = "<group>"; };
+		E2EE2B7E1C2A4154004523D8 /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataStore.m; path = HelperFiles/DataStore.m; sourceTree = "<group>"; };
+		E2EE2B801C2A4237004523D8 /* ParseAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseAPIClient.h; path = HelperFiles/ParseAPIClient.h; sourceTree = "<group>"; };
+		E2EE2B811C2A4237004523D8 /* ParseAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseAPIClient.m; path = HelperFiles/ParseAPIClient.m; sourceTree = "<group>"; };
+		E2EE2B831C2A4459004523D8 /* ImageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageObject.h; path = HelperFiles/ImageObject.h; sourceTree = "<group>"; };
+		E2EE2B841C2A4459004523D8 /* ImageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageObject.m; path = HelperFiles/ImageObject.m; sourceTree = "<group>"; };
+		E2EE2B851C2A4459004523D8 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Location.h; path = HelperFiles/Location.h; sourceTree = "<group>"; };
+		E2EE2B861C2A4459004523D8 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Location.m; path = HelperFiles/Location.m; sourceTree = "<group>"; };
+		E2EE2B891C2AEFE0004523D8 /* AWSDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AWSDownloadManager.h; path = HelperFiles/AWSDownloadManager.h; sourceTree = "<group>"; };
+		E2EE2B8A1C2AEFE0004523D8 /* AWSDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AWSDownloadManager.m; path = HelperFiles/AWSDownloadManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
