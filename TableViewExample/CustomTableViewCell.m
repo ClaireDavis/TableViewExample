@@ -59,4 +59,5 @@
   [self.contentView addSubview:self.locationLabel];
 }
 
+
 @end

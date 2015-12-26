@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4139BBA2A8294402C650ADB0 /* libPods-TableViewExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3B5E4089E2486307049AD3 /* libPods-TableViewExample.a */; };
 		E2D154091C2E41D1003A0428 /* APIConstants.m.example in Resources */ = {isa = PBXBuildFile; fileRef = E2D154081C2E41D1003A0428 /* APIConstants.m.example */; };
+		E2D1540C1C2E5098003A0428 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D1540B1C2E5098003A0428 /* DetailViewController.m */; };
 		E2EE2B431C2A2CDF004523D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EE2B421C2A2CDF004523D8 /* main.m */; };
 		E2EE2B461C2A2CDF004523D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EE2B451C2A2CDF004523D8 /* AppDelegate.m */; };
 		E2EE2B4C1C2A2CDF004523D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EE2B4A1C2A2CDF004523D8 /* Main.storyboard */; };
@@ -48,6 +49,8 @@
 		4A3B5E4089E2486307049AD3 /* libPods-TableViewExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TableViewExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		618DB9F05D0D5835BBD727DE /* Pods-TableViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewExample/Pods-TableViewExample.release.xcconfig"; sourceTree = "<group>"; };
 		E2D154081C2E41D1003A0428 /* APIConstants.m.example */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = APIConstants.m.example; path = HelperFiles/APIConstants.m.example; sourceTree = "<group>"; };
+		E2D1540A1C2E5098003A0428 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E2D1540B1C2E5098003A0428 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		E2EE2B3E1C2A2CDF004523D8 /* TableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EE2B421C2A2CDF004523D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2EE2B441C2A2CDF004523D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = HelperFiles/AppDelegate.h; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				E2EE2B771C2A3039004523D8 /* CustomTableViewCell.h */,
 				E2EE2B781C2A3039004523D8 /* CustomTableViewCell.m */,
 				E2EE2B4A1C2A2CDF004523D8 /* Main.storyboard */,
+				E2D1540A1C2E5098003A0428 /* DetailViewController.h */,
+				E2D1540B1C2E5098003A0428 /* DetailViewController.m */,
 				E27967B61C2CFD030034E4C8 /* HelperFiles */,
 				E2EE2B411C2A2CDF004523D8 /* Supporting Files */,
 			);
@@ -395,6 +400,7 @@
 				E2EE2B871C2A4459004523D8 /* ImageObject.m in Sources */,
 				E2EE2B8B1C2AEFE1004523D8 /* AWSDownloadManager.m in Sources */,
 				E2EE2B7F1C2A4154004523D8 /* DataStore.m in Sources */,
+				E2D1540C1C2E5098003A0428 /* DetailViewController.m in Sources */,
 				E2EE2B7C1C2A33D9004523D8 /* APIConstants.m in Sources */,
 				E2EE2B461C2A2CDF004523D8 /* AppDelegate.m in Sources */,
 				E2EE2B761C2A2D95004523D8 /* PictureTableViewController.m in Sources */,

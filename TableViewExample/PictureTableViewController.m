@@ -11,7 +11,10 @@
 #import "CustomTableViewCell.h"
 #import <AWSS3/AWSS3.h>
 #import "ImageObject.h"
+#import "DetailViewController.h"
 
+static NSString *const kPictureCellIdentifier = @"pictureCell";
+static CGFloat const kNumCellsOnScreen = 7.0f;
 
 @interface PictureTableViewController ()
 
@@ -37,6 +40,8 @@
   [self.refreshControl addTarget:self
                           action:@selector(downloadImagesToDisplay)
                 forControlEvents:UIControlEventValueChanged];
+  
+  self.navigationItem.title = @"Images";
 }
 
 #pragma mark - Table view data source
@@ -81,7 +86,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"pictureCell" forIndexPath:indexPath];
+  CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kPictureCellIdentifier
+                                                              forIndexPath:indexPath];
   
   // set UIImageView to have image with the ID of that ImageObject in the Data Store's image array
   ImageObject *image = self.store.downloadedPictures[indexPath.row];
@@ -96,9 +102,9 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  // get height, set cell height so that 7 cells appear on screen
+  // get height, set cell height so that kNumCellsOnScreen cells appear on screen
   CGFloat height = [UIScreen mainScreen].bounds.size.height;
-  return height/7;
+  return height/kNumCellsOnScreen;
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView
@@ -111,6 +117,31 @@
   if (currentOffset >= targetLoadOffset) {
     [self downloadImagesToDisplay];
   }
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  // segue to detail view controller
+  [self performSegueWithIdentifier:@"detailSegue" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+  // get image object of selected cell
+  NSIndexPath *ip = [self.tableView indexPathForSelectedRow];
+  ImageObject *image = self.store.downloadedPictures[ip.row];
+  NSString *imageID = image.imageID;
+  
+  // pass values to public properties of destination view controller
+  if ([segue.identifier isEqualToString:@"detailSegue"]) {
+    DetailViewController *vc = segue.destinationViewController;
+    vc.city = image.location.city;
+    vc.country = image.location.country;
+    vc.image = self.store.images[imageID];
+    vc.likes = [NSString stringWithFormat:@"%@",image.likes];
+    vc.imageID = imageID;
+  }
+  
 }
 
 @end
