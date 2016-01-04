@@ -6,17 +6,18 @@
 //  Copyright © 2015 Davis. All rights reserved.
 //
 
+#import <AWSS3/AWSS3.h>
+
 #import "PictureTableViewController.h"
 #import "DataStore.h"
 #import "CustomTableViewCell.h"
-#import <AWSS3/AWSS3.h>
 #import "ImageObject.h"
 #import "DetailViewController.h"
 
 static NSString *const kPictureCellIdentifier = @"pictureCell";
 static CGFloat const kNumCellsOnScreen = 7.0f;
 
-@interface PictureTableViewController ()
+@interface PictureTableViewController () 
 
 @property (nonatomic, strong) DataStore *store;
 
@@ -57,11 +58,13 @@ static CGFloat const kNumCellsOnScreen = 7.0f;
           if (complete) {
             [[NSOperationQueue mainQueue]addOperationWithBlock:^{
               [self.tableView reloadData];
+              [self.delegate pictureTableViewController:self didEndDownloadingImage:object.imageID];
             }];
           }
         }];
       }
-      [[NSOperationQueue mainQueue]addOperationWithBlock:^{
+      
+      [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         // if is refreshing end refreshing then reload table view either way
         if (self.refreshControl) {
           [self.refreshControl endRefreshing];
@@ -135,6 +138,7 @@ static CGFloat const kNumCellsOnScreen = 7.0f;
   // pass values to public properties of destination view controller
   if ([segue.identifier isEqualToString:@"detailSegue"]) {
     DetailViewController *vc = segue.destinationViewController;
+    self.delegate = vc;
     vc.city = image.location.city;
     vc.country = image.location.country;
     vc.image = self.store.images[imageID];

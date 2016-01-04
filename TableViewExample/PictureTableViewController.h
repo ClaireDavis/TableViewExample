@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class PictureTableViewController;
+
+// protocol to handle picture downloading after segue to detail is complete
+
+@protocol PictureTableViewControllerDelegate <NSObject>
+- (void)pictureTableViewController:(PictureTableViewController *)viewController
+            didEndDownloadingImage:(NSString *)image;
+@end
 
 @interface PictureTableViewController : UITableViewController
-
-
+@property (nonatomic, weak) id<PictureTableViewControllerDelegate> delegate;
 @end

@@ -9,8 +9,8 @@
 #import "DetailViewController.h"
 #import "DataStore.h"
 
-
 @interface DetailViewController ()
+
 @property (weak, nonatomic) IBOutlet UIImageView *locationImage;
 @property (weak, nonatomic) IBOutlet UILabel *cityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *countryLabel;
@@ -21,7 +21,8 @@
 
 @implementation DetailViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
   [super viewDidLoad];
   
   // get store
@@ -33,16 +34,20 @@
   self.likesLabel.text = [NSString stringWithFormat:@"Likes: %@",self.likes];
   
   // check if image has already downloaded, if it has set the image
-  // if it hasn't, download it now and then set it
   if (self.store.images[self.imageID]) {
     self.locationImage.image = self.image;
-  } else {
-    [self.store downloadPictureFromAWS:self.imageID withCompletion:^(BOOL complete) {
-      self.locationImage.image = self.store.images[self.imageID];
-    }];
   }
   
 }
+
+-(void)pictureTableViewController:(PictureTableViewController *)viewController didEndDownloadingImage:(NSString *)image
+{
+  // impelment protocol to set image once downloaded if it wasn't already downloaded before segue
+  if ([image isEqualToString:self.imageID]) {
+    self.locationImage.image = self.store.images[self.imageID];
+  }
+}
+
 
 
 

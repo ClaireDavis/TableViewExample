@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PictureTableViewController.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <PictureTableViewControllerDelegate>
 
 @property (nonatomic, strong) NSString *city;
 @property (nonatomic, strong) NSString *country;
